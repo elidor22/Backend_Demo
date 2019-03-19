@@ -1,8 +1,8 @@
-package com.Backend_Aplication_Start.Backend_Demo.User_Controlling_Scripts;
+package com.Backend_Aplication_Start.Backend_Demo;
 
 public class UserNotFoundExpection extends RuntimeException {
 
-    UserNotFoundExpection(Long id) {
+    public UserNotFoundExpection(Long id) {
         super("Could not find employee " + id);
     }
 }

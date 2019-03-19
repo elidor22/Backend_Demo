@@ -1,4 +1,4 @@
-package com.Backend_Aplication_Start.Backend_Demo.User_Controlling_Scripts;
+package com.Backend_Aplication_Start.Backend_Demo;
 
 
 import org.springframework.http.HttpStatus;

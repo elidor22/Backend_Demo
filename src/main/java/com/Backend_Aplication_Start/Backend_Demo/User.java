@@ -1,6 +1,7 @@
-package com.Backend_Aplication_Start.Backend_Demo.User_Controlling_Scripts;
-import lombok.Data;
+package com.Backend_Aplication_Start.Backend_Demo;
 
+
+import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,10 +11,10 @@ import javax.persistence.Id;
 public class User {
     private @Id @GeneratedValue Long id;
     private String name;
-    private String email;
+    private String role;
 
-    public User(String name, String email) {
+    public User(String name, String role) {
         this.name = name;
-        this.email = email;
+        this.role = role;
     }
 }
