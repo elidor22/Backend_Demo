@@ -20,7 +20,7 @@ class LoadDatabase {
 		return args -> {
 			log.info("Preloading " + repository.save(new User("Bilbo Baggins", "burglar")));
 			log.info("Preloading " + repository.save(new User("Frodo Baggins", "thief")));
-			log.info("Preloading"+repository.save(new User("Asshole", "Some kind of Johhny Sins")));
+			log.info("Preloading"+repository.save(new User("Elidor", "THe dude that is developing this stuff")));
 		};
 	}
 }
