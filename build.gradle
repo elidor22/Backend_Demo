@@ -24,13 +24,19 @@ ext {
 }
 
 dependencies {
+	compile("org.springframework.boot:spring-boot-starter-hateoas")
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'
-	implementation 'org.springframework.cloud:spring-cloud-starter-security'
+	//implementation 'org.springframework.cloud:spring-cloud-starter-security'
+	//security does not allow postman to use it without authorization token, so this will the be one of the last things to be implemented in pre-production phase
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly 'org.projectlombok:lombok:1.18.6'
+	annotationProcessor 'org.projectlombok:lombok:1.18.6'
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper:8.0.47')
 }
 
 dependencyManagement {
